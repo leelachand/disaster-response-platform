@@ -1,0 +1,13 @@
+{
+  "name": "disaster-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd disaster-response-backend && node index.js",
+    "client": "cd disaster-dashboard && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
